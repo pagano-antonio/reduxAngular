@@ -1,8 +1,8 @@
 import { Component, computed, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Store } from '@ngrx/store';
-import { selectCounterValue } from './state/counter/counter.selectors';
-import { decrement, increment, reset } from './state/counter/counter.actions';
+import { selectCounterValue } from './counter.selectors';
+import { decrement, increment, reset } from './counter.actions';
 
 @Component({
   selector: 'app-counter',
@@ -21,10 +21,9 @@ import { decrement, increment, reset } from './state/counter/counter.actions';
 export class CounterComponent {
   private store = inject(Store);
 
-  // Signal derivato dallo store (Angular 16+)
   value = this.store.selectSignal(selectCounterValue);
 
-  onInc()   { this.store.dispatch(increment()); }
-  onDec()   { this.store.dispatch(decrement()); }
+  onInc() { this.store.dispatch(increment()); }
+  onDec() { this.store.dispatch(decrement()); }
   onReset() { this.store.dispatch(reset()); }
 }

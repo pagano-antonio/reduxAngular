@@ -14,7 +14,7 @@ export const appConfig: ApplicationConfig = {
     provideStore({ counter: counterReducer }),
     provideStoreDevtools({
       maxAge: 25,
-      logOnly: false, // metti true in produzione
+      logOnly: false,
       autoPause: true,
       trace: false,
     })

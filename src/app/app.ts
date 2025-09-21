@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CounterComponent } from './counter';
+import { CounterComponent } from './state/counter/counter';
 
 @Component({
   selector: 'app-root',
