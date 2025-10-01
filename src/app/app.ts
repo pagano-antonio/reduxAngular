@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { CounterComponent } from './state/counter/counter';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CounterComponent],
+  // imports: [CounterComponent, UsersComponent],
+  imports: [CounterComponent],
+
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

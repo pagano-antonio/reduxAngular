@@ -1,4 +1,5 @@
 // users.effects.ts
+/*
 import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import * as UsersActions from './users.actions';
@@ -22,3 +23,4 @@ export class UsersEffects {
     )
   );
 }
+*/

@@ -1,4 +1,5 @@
 // users.reducer.ts
+/*
 import { createReducer, on } from '@ngrx/store';
 import * as UsersActions from './users.actions';
 
@@ -20,3 +21,4 @@ export const usersReducer = createReducer(
   on(UsersActions.loadUsersSuccess, (state, { users }) => ({ ...state, list: users, loading: false })),
   on(UsersActions.loadUsersFailure, (state, { error }) => ({ ...state, error, loading: false })),
 );
+*/
